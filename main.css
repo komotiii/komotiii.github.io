@@ -1,0 +1,191 @@
+/* main.css - Dark Compact Theme */
+
+/* 基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+    margin: 0;
+    padding: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-size: 14px;
+}
+
+/* リンク */
+a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #6eb5ff;
+}
+
+/* セクション */
+section {
+    background: rgba(30, 30, 46, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(74, 158, 255, 0.15);
+}
+
+/* 見出し h1 */
+h1 {
+    font-size: 1.4em;
+    color: #ffffff;
+    border-bottom: 2px solid #4a9eff;
+    padding-bottom: 4px;
+    margin: 0 0 12px 0;
+}
+
+/* 見出し h2 */
+h2 {
+    font-size: 1.1em;
+    color: #b8b8d1;
+    margin: 15px 0 8px 0;
+    border-left: 3px solid #4a9eff;
+    padding-left: 10px;
+}
+
+/* 見出し h3 */
+h3 {
+    font-size: 1em;
+    color: #a0a0b8;
+    margin: 12px 0 6px 0;
+    padding-left: 8px;
+}
+
+/* Definition List Styles for Projects */
+.project-list {
+    margin: 10px 0;
+}
+
+.project-list dt {
+    font-weight: 600;
+    color: #4a9eff;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 0.95em;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.project-list dt:first-child {
+    margin-top: 0;
+}
+
+.project-list dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #c0c0c0;
+    padding-left: 10px;
+    border-left: 2px solid #2a2a3e;
+}
+
+.project-list dd em {
+    color: #ff6b6b;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* 段落 */
+p {
+    margin: 0 0 10px 0;
+    color: #c0c0c0;
+}
+
+/* リスト */
+ul {
+    padding-left: 18px;
+    margin: 8px 0;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 8px;
+    margin-bottom: 5px;
+    color: #d0d0d0;
+    line-height: 1.4;
+}
+
+ul li strong {
+    color: #ffffff;
+}
+
+/* 問題点の強調 */
+em {
+    color: #ff6b6b;
+    font-style: italic;
+}
+
+/* 階層的なリスト */
+section > ul > li {
+    font-weight: bold;
+}
+
+ul ul li {
+    font-weight: normal;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul ul li::marker {
+    color: #4a9eff;
+}
+
+/* Private Projects セクション */
+.private-section {
+    background: rgba(50, 30, 60, 0.5) !important;
+    border: 1px solid rgba(150, 100, 200, 0.2) !important;
+}
+
+.private-section h1 {
+    border-bottom-color: #9b59b6 !important;
+}
+
+.private-section h2 {
+    border-left-color: #9b59b6 !important;
+    color: #d8b5e8 !important;
+}
+
+.private-section .project-list dt {
+    color: #b88fd8 !important;
+}
+
+.private-section .project-list dd {
+    border-left-color: #4a2a5e !important;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.85em;
+    color: #8a8a8a;
+    margin-top: 20px;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a9eff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6eb5ff;
+}
