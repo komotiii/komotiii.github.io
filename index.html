@@ -1,256 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="komotiiii's software development portfolio - Python, C++, automation tools, and trading systems">
-    <title>komotiiii Portfolio</title>
+    <meta name="description" content="komotiiiiの開発ポートフォリオ。自動化、データ収集、アルゴリズム実装、暗号資産システム開発の実績を紹介します。">
+    <title>komotiiii | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
 
-    <section>
-        <h1 id="profile">Profile</h1>
-        <p>Showcasing personal software development projects and automation tools.</p>
-        <ul>
-            <li><strong>GitHub:</strong> <a href="https://github.com/komotiii" target="_blank">@komotiii</a></li>
-        </ul>
-    </section>
+    <header class="site-header">
+        <a class="brand" href="#top">komotiiii</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#featured">Featured</a>
+            <a href="#toolboxes">Toolboxes</a>
+            <a href="#private-work">Private</a>
+            <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+    </header>
 
-    <section>
-        <h1 id="completed">Completed Projects</h1>
-        <p>Production-ready tools and applications</p>
+    <main id="top">
+        <section class="hero reveal">
+            <p class="kicker">Physics x Data x Automation</p>
+            <h1>解析して、作って、運用まで回す。</h1>
+            <p class="hero-lead">
+                筑波大学院で物理を学びながら、PythonとC++で実務レベルの自動化ツールとデータ処理基盤を開発。
+                API連携、スクレイピング、監視、通知、可視化までを一気通貫で実装します。
+            </p>
+            <p class="hero-role">Physics Graduate Student @ Tsukuba Univ. / Data Engineer / Crypto Bot Developer</p>
+            <ul class="chip-list" aria-label="Interests">
+                <li>Motorcycle</li>
+                <li>Night Sky Photography</li>
+                <li>Music</li>
+            </ul>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                <a class="btn btn-ghost" href="#featured">代表作を見る</a>
+            </div>
+        </section>
 
-        <h2>Calendar & Schedule</h2>
-        <dl class="project-list">
-            <dt>Add_event_cmd.py</dt>
-            <dd>Adds events to Google Calendar via OAuth2 authentication to the primary calendar using Google Calendar API.</dd>
+        <section id="featured" class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Featured Projects</p>
+                <h2>代表作</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Pachi-Slot Analyzer</h3>
+                    <p class="summary">Seleniumによる並列スクレイピングでホールデータを収集し、機械ごとの指標をCSV化。分析に直接使えるデータ基盤を構築。</p>
+                    <ul class="tech-tags">
+                        <li>Python</li>
+                        <li>Selenium</li>
+                        <li>ThreadPoolExecutor</li>
+                        <li>CSV</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/komotiii/pachi-slot-analyzer" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
 
-            <dt>Clear_event.py</dt>
-            <dd>Bulk deletes events from a specific calendar for X days starting from today using Google Calendar API with OAuth2 authentication.</dd>
+                <article class="project-card">
+                    <h3>SAO Calendar UI</h3>
+                    <p class="summary">アニメ風のタイマーUIとGoogle Calendar API連携を組み合わせ、予定を視覚的に追えるフロントエンドを実装。</p>
+                    <ul class="tech-tags">
+                        <li>JavaScript</li>
+                        <li>Flask</li>
+                        <li>Google Calendar API</li>
+                        <li>UI/UX</li>
+                    </ul>
+                    <a class="card-link" href="schedule/index.html">デモを見る</a>
+                </article>
+            </div>
+        </section>
 
-            <dt>Sum_calendar.py</dt>
-            <dd>Retrieves events from multiple Google Calendars for a specified date, calculates total time per calendar, and visualizes with horizontal bar charts.</dd>
-        </dl>
+        <section id="toolboxes" class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Developer Toolboxes</p>
+                <h2>自動化と計算力の証明</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Python Automation Scripts</h3>
+                    <p class="summary">カレンダー自動化、天気API連携、PC監視、通知Botなどをリポジトリ単位で整理。日常運用に耐えるスクリプト集へ再設計。</p>
+                    <ul class="tech-tags">
+                        <li>Python</li>
+                        <li>Google APIs</li>
+                        <li>Discord Bot</li>
+                        <li>Automation</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/komotiii/python-automation-scripts" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
 
-        <h2>Weather Integration</h2>
-        <dl class="project-list">
-            <dt>Openweather_desk.py</dt>
-            <dd>Fetches weather forecasts (3-hour intervals for 24 hours) from OpenWeatherMap API and registers weather events in Google Calendar.</dd>
+                <article class="project-card">
+                    <h3>C++ Math and CLI Utils</h3>
+                    <p class="summary">統計計算、素数探索、時間管理CLIを再整理。ファイル命名とREADMEを改善し、計算系ポートフォリオとして公開可能な形に統合。</p>
+                    <ul class="tech-tags">
+                        <li>C++</li>
+                        <li>Algorithm</li>
+                        <li>CLI Tools</li>
+                        <li>Numerical Thinking</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/komotiii/cpp-math-utils" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+            </div>
+        </section>
 
-            <dt>Openweather_raspi.py</dt>
-            <dd>Raspberry Pi version of Openweather_desk.py with identical functionality except for file paths.</dd>
-        </dl>
-
-        <h2>Clipboard Monitoring</h2>
-        <dl class="project-list">
-            <dt>CtrlV_img.py</dt>
-            <dd>Monitors clipboard every 5 seconds and automatically saves images. Uses MD5 hash for duplicate detection.</dd>
-
-            <dt>CtrlV_txt.py</dt>
-            <dd>Monitors clipboard every 3 seconds and saves text to date-based Excel files.</dd>
-        </dl>
-
-        <h2>System Monitoring</h2>
-        <dl class="project-list">
-            <dt>Auto_startup.py</dt>
-            <dd>Automatically launches multiple Python programs at 5-second intervals with tkinter GUI for status monitoring. <em>(Currently unused as startup management is handled by AHK)</em></dd>
-
-            <dt>CamScreen.py</dt>
-            <dd>Automatically captures webcam and multi-monitor screenshots every 10 minutes.</dd>
-
-            <dt>Networkspeed.py</dt>
-            <dd>Measures network speed every second using psutil and displays real-time graphs in Mbps.</dd>
-        </dl>
-
-        <h2>Discord & Web Scraping</h2>
-        <dl class="project-list">
-            <dt>PlayingBOT.py</dt>
-            <dd>Discord bot that monitors specific user activities every minute and logs them to Google Calendar.</dd>
-
-            <dt>Tukunavi.py</dt>
-            <dd>Scrapes Tukunavi every 5 minutes to detect new posts and reply count changes, sending notifications via LINE Notify API. <em>(Migration to Raspi execution + Discord notifications planned due to LINE Notify API deprecation)</em></dd>
-        </dl>
-
-        <h2>Utilities</h2>
-        <dl class="project-list">
-            <dt>Tutturu15m.py</dt>
-            <dd>Plays totoru.wav every 15 minutes (at :00, :15, :30, :45 of each hour).</dd>
-        </dl>
-
-        <h2>Math & Algorithm (C++)</h2>
-        <dl class="project-list">
-            <dt>ave_med_car.cpp</dt>
-            <dd>Statistical calculation program for datasets. Sorts input data and calculates sum, average, median, mode, and variance with CLI output.</dd>
-
-            <dt>fibo.cpp</dt>
-            <dd>Calculates and displays Fibonacci sequence up to 93 terms (unsigned long long limit). Outputs each term sequentially at 50ms intervals.</dd>
-
-            <dt>page_progress.cpp</dt>
-            <dd>Reading progress management tool. Inputs current page and total pages, updates progress with key input. Displays remaining pages and completion rate. Records start and elapsed time in record.txt.</dd>
-
-            <dt>reason.cpp</dt>
-            <dd>Inputs sanity values (max/current) and calculates recovery time (6 min/sanity). Displays recovery completion time in HH:MM format.</dd>
-
-            <dt>time_timer.cpp</dt>
-            <dd>Countdown timer to a specified time. Inputs target time and title, displays remaining time in HH:MM:SS format. Time correction every 5 minutes. Progress bar display. Beep notification at 0 seconds. Records execution history in record.txt.</dd>
-
-            <dt>timer.cpp</dt>
-            <dd>Countdown timer for specified minutes. Inputs name and time (minutes), displays remaining time in seconds. Beep notification at 0 seconds. Loop execution available.</dd>
-        </dl>
-
-        <h3>Day Remain (C++)</h3>
-        <dl class="project-list">
-            <dt>remain.cpp</dt>
-            <dd>Real-time display of today's remaining time every second. Countdown in HH:MM:SS format. Displays "Next day" in red at midnight.</dd>
-
-            <dt>remain_original.cpp</dt>
-            <dd>Displays today's remaining time and progress rate (%). Updates every second.</dd>
-
-            <dt>remain_useif.cpp</dt>
-            <dd>Bidirectional display of today's remaining time (remaining % / elapsed %). Time correction every 10 minutes. Displays "Next day" at midnight then auto-restarts.</dd>
-        </dl>
-
-        <h3>Prime Number (C++)</h3>
-        <dl class="project-list">
-            <dt>p_n.cpp</dt>
-            <dd>Generates specified number of primes and saves to output.txt. Displays progress with progress bar (50 segments). Uses trial division method.</dd>
-
-            <dt>p_n_morefast.cpp</dt>
-            <dd>High-speed version of p_n.cpp. Judges with trial division up to square root. Displays progress in %. Saves to outputfast.txt.</dd>
-
-            <dt>p_n_morefast_find min.cpp</dt>
-            <dd>Searches for minimum prime after specified number. Outputs when prime is found and displays # for ongoing search.</dd>
-
-            <dt>need.cpp</dt>
-            <dd>Generates specified number of primes (basic version). Displays processing in red. Saves to output.txt.</dd>
-        </dl>
-    </section>
-
-    <section>
-        <h1 id="in-progress">In Progress / Fix Projects</h1>
-        <p>Projects requiring improvements or bug fixes</p>
-
-        <h2>Bybit Trading Tools</h2>
-        <dl class="project-list">
-            <dt>BUSD.py</dt>
-            <dd>Automated differential trading utilizing BUSD/USDT (Spot) price cycles on Bybit. Remembers execution prices and only allows orders with positive P&L. <em>(Missing API key path configuration)</em></dd>
-
-            <dt>Get_JPYUSDrate_yahoo.py</dt>
-            <dd>Scrapes JPY/USD exchange rate from Yahoo Finance. Compares prices between Bybit (USDT-based) and BITPoint (JPY-based) to detect arbitrage opportunities.</dd>
-
-            <dt>Low_exchange_coin.py</dt>
-            <dd>Monitors price differences between USDT-based and USDC-based markets to detect arbitrage opportunities.</dd>
-
-            <dt>P2P_csv.py</dt>
-            <dd>Analyzes P2P transaction history (CSV) and calculates individual and overall P&L based on JPY/USDT rates.</dd>
-
-            <dt>Paypay.py</dt>
-            <dd>Extracts completed transactions from PayPay transfer history (CSV). Calculates purchasable amount based on monthly transfer limit of ¥500,000.</dd>
-
-            <dt>Trade_Transfer.py → Transfer.py</dt>
-            <dd>Detects deposits to Unified Account and notifies unlock time. Automatically transfers to Funding Account after USDT conversion.</dd>
-
-            <dt>USDTC_trade.py</dt>
-            <dd>Executes automated buy/sell trades for USDC/USDT pair considering balance and liquidity.</dd>
-        </dl>
-
-        <h2>Calendar Extension</h2>
-        <dl class="project-list">
-            <dt>selecter.js</dt>
-            <dd>Attempted implementation as a Google Chrome extension but incomplete. <em>(Implementation not successful)</em></dd>
-        </dl>
-
-        <h2>Desk Record</h2>
-        <dl class="project-list">
-            <dt>active_window.py</dt>
-            <dd>Monitors active window every second and logs changes to a file.</dd>
-
-            <dt>screenshot.py</dt>
-            <dd>Saves screenshots in YYYY-MM-DD_HH-MM-SS format at execution time. Callable from other programs.</dd>
-        </dl>
-
-        <h2>English Helper</h2>
-        <dl class="project-list">
-            <dt>Audio_txt.py</dt>
-            <dd>Converts microphone audio to text via Speech-to-Text, suggests English improvements using Hugging Face LLM (microsoft/DialoGPT-medium). Vocalizes responses with gTTS and plays them. <em>(Free Speech-to-Text model has low accuracy)</em></dd>
-        </dl>
-
-        <h2>Keiba (Horse Racing)</h2>
-        <dl class="project-list">
-            <dt>NAR_Place_Monitor.py</dt>
-            <dd>Scrapes netkeiba.com (local horse racing) every 15 seconds. Highlights horses with ≥80% top-3 finish rate and 1.1-1.3x place odds. MP3 audio notification before race deadline. <em>(Requires base_URL update due to site_ID change)</em></dd>
-        </dl>
-
-        <h2>Morning Voice</h2>
-        <dl class="project-list">
-            <dt>CalendarFlask.py</dt>
-            <dd>Retrieves today's events from calendars specified in calendar_list.txt using Google Calendar API. Provides /events (all) and /events/&lt;calendar_name&gt; (individual) endpoints. <em>(Contains unnecessary processes from legacy code reuse)</em></dd>
-
-            <dt>Morning_Voice.py</dt>
-            <dd>Reads morning announcements using VOICEVOX (local TTS). Sequentially vocalizes date/time, OpenWeatherMap forecast, CalendarFlask.py events, and gnews news.</dd>
-
-            <dt>Openweather.py</dt>
-            <dd>Fetches today's weather forecast (3-hour intervals) from OpenWeatherMap API. Calculates and displays max/min temperature, average precipitation probability, and most frequent weather.</dd>
-        </dl>
-
-        <h2>Nekoze Improve (Posture Correction)</h2>
-        <dl class="project-list">
-            <dt>Finger_sensing.py</dt>
-            <dd>Detects hand landmarks from webcam using MediaPipe (cv2) and draws them in real-time.</dd>
-
-            <dt>nekoze.py</dt>
-            <dd>Detects posture from webcam using MediaPipe (cv2). Calculates distance of line connecting nose and shoulders, displays warning and plays alert sound (be.mp3) via pygame when slouching detected (distance ≤ 0.05).</dd>
-        </dl>
-
-        <h2>Raspi Temp + Hum</h2>
-        <dl class="project-list">
-            <dt>Raspi_temp+hum.py</dt>
-            <dd>Updates homepage hourly with temperature and humidity data acquired from Raspberry Pi. Builds Flask server for real-time data viewing. Considering Tailscale for remote access. <em>(Implementation incomplete)</em></dd>
-        </dl>
-
-        <h2>SAO Calendar</h2>
-        <dl class="project-list">
-            <dt>serverfix.py (Flask backend)</dt>
-            <dd>Loads calendar IDs from cal_ids.txt and califx_ids.txt using Google Calendar API (OAuth2 authentication). Provides /events endpoint at 127.0.0.1:5000. Returns today's events sorted by time with fixed: true/false flags.</dd>
-
-            <dt>index.html / renderer.js (Frontend)</dt>
-            <dd>SAO-inspired UI. Fetches events from /events at startup. Countdown timer displays remaining time in HH:MM:SS. Plays notification sound (s.mp3) at timer 0 and starts next event. Color-codes events: past (gray), current (red), future (blue/white). Filter button toggles califx_ids.txt display.</dd>
-        </dl>
-
-        <h2>Slot (Pachinko Slot)</h2>
-        <dl class="project-list">
-            <dt>Slot.py</dt>
-            <dd>Parallel scrapes pachinko slot machine URLs listed in list.txt using Selenium. Extracts machine number, model name, BB/RB/ART counts, cumulative/current start count, max held balls and auto-calculates probabilities. Sets flags based on conditions like cumulative games ≥ 4000, cumulative != 0 and current < 100, current ≥ 400. Saves timestamped CSV (pachinko_YYYYMMDD_HHMMSS.csv). Parallel processing with ThreadPoolExecutor (max 4 threads).</dd>
-        </dl>
-
-        <h2>Typing Monitor</h2>
-        <dl class="project-list">
-            <dt>Typing_monitor.py</dt>
-            <dd>Monitors clipboard every second for 5 minutes. Extracts WPM, accuracy, character count, error count, and elapsed time using regex and saves to E:\typing_data.csv. Displays average WPM and accuracy in CLI.</dd>
-        </dl>
-    </section>
-
-    <section class="private-section">
-        <h1 id="private">Private Projects</h1>
-        <p>Confidential projects (details not publicly disclosed)</p>
-
-        <h2>Bybit Trading Panel</h2>
-        <dl class="project-list">
-            <dt>Overview</dt>
-            <dd>Multi-account management tool using Bybit API. Built with FastAPI (Backend) + React (Frontend). Features real-time position monitoring, automated grid orders, and progressive rebalance logic. High-speed execution with asynchronous processing. Currently under development in demo environment.</dd>
-
-            <dt>Tech Stack</dt>
-            <dd>FastAPI, React, Tailwind CSS, Bybit API, asyncio</dd>
-
-            <dt>Challenge</dt>
-            <dd>Ensuring safety during production environment migration</dd>
-        </dl>
-    </section>
+        <section id="private-work" class="content-section reveal private-zone">
+            <div class="section-head">
+                <p class="kicker">Freelance and Private Works</p>
+                <h2>非公開案件と実務志向の開発</h2>
+            </div>
+            <div class="card-grid">
+                <article class="project-card">
+                    <h3>Bybit Trading Panel</h3>
+                    <p class="summary">FastAPI + Reactで構築した複数口座向けトレード管理UI。リアルタイム監視、グリッド注文、段階的リバランスを設計。</p>
+                    <ul class="tech-tags">
+                        <li>FastAPI</li>
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                        <li>Async I/O</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/komotiii/Bybit-Trading-Panel" target="_blank" rel="noopener noreferrer">概要を見る</a>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 komotiiii. All rights reserved. Powered by GitHub Pages.</p>
+        <p>© 2026 komotiiii</p>
+        <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">github.com/komotiii</a>
     </footer>
-
 </body>
 </html>
