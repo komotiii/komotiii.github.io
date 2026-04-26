@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="komotiiiiの開発ポートフォリオ。自動化、データ収集、アルゴリズム実装、暗号資産システム開発の実績と、パーソナルな技術環境を紹介します。">
+    <meta name="description" content="Physicist & Data Engineer. 筑波大学院修士課程。高エネルギー原子核実験とデータエンジニアリング。">
     <title>komotiiii | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,9 @@
     <header class="site-header">
         <a class="brand" href="#top">komotiiii</a>
         <nav class="main-nav" aria-label="Main navigation">
-            <a href="#status">Status</a>
-            <a href="#featured">Projects</a>
-            <a href="#gear">Workspace</a>
-            <a href="#lifestyle">Lifestyle</a>
+            <a href="#about">Profile</a>
+            <a href="#professional">Professional</a>
+            <a href="#personal">Personal</a>
             <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHub</a>
         </nav>
     </header>
@@ -35,38 +34,75 @@
             <p class="hero-role">Physics Graduate Student @ Tsukuba Univ. / Data Engineer / Crypto Bot Developer</p>
             <div class="cta-row">
                 <a class="btn btn-primary" href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
-                <a class="btn btn-ghost" href="#featured">代表作を見る</a>
+                <a class="btn btn-ghost" href="#professional">代表作を見る</a>
             </div>
         </section>
 
-        <section id="status" class="content-section reveal">
+        <!-- =============== PROFESSIONAL 層 =============== -->
+
+        <section id="about" class="content-section reveal layer-professional">
             <div class="section-head">
-                <p class="kicker">Live Dashboard</p>
-                <h2>Current Status</h2>
+                <p class="kicker">Profile</p>
+                <h2>プロフィール</h2>
             </div>
-            <div class="card-grid card-grid-three">
-                <article class="status-card">
-                    <span class="status-label">Availability</span>
-                    <span class="status-value highlight-busy">Busy</span>
-                    <span class="status-sub">Updated automatically every 2h</span>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3>基本情報</h3>
+                    <ul class="about-list">
+                        <li><strong>Name:</strong> [Your Name]</li>
+                        <li><strong>Affiliation:</strong> Tsukuba University, Graduate School of Pure and Applied Sciences</li>
+                        <li><strong>Program:</strong> Master's Program, Physics (M1)</li>
+                        <li><strong>Location:</strong> Tsukuba, Ibaraki</li>
+                    </ul>
                 </article>
-                <article class="status-card">
-                    <span class="status-label">Room Temp</span>
-                    <span class="status-value">24.5°C</span>
-                    <span class="status-sub">Live via Raspberry Pi</span>
-                </article>
-                <article class="status-card">
-                    <span class="status-label">Now Playing</span>
-                    <span class="status-value">LONGMAN - Spiral</span>
-                    <span class="status-sub">Spotify API / Practice Track</span>
+                <article class="about-card">
+                    <h3>研究分野</h3>
+                    <p>高エネルギー原子核実験、QCD物質、Quark-Gluon Plasma(QGP)の生成と性質。大型加速器実験(RHIC, LHC)のデータ解析とシミュレーション。</p>
                 </article>
             </div>
         </section>
 
-        <section id="featured" class="content-section reveal">
+        <section id="professional" class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">Technical Skills</p>
+                <h2>スキル・技術スタック</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Language & Framework</h3>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>FastAPI</li><li>React</li><li>JavaScript</li>
+                        <li>SQL</li><li>C++</li><li>Bash</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Data & Infrastructure</h3>
+                    <ul class="tech-tags">
+                        <li>Pandas</li><li>NumPy</li><li>Selenium</li><li>API Design</li>
+                        <li>ETL</li><li>Real-time Monitoring</li><li>Git</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Scientific Tools</h3>
+                    <ul class="tech-tags">
+                        <li>ROOT</li><li>HEP Analysis</li><li>GEANT4</li><li>Jupyter</li>
+                        <li>Linux</li><li>LaTeX</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>DevOps & Tools</h3>
+                    <ul class="tech-tags">
+                        <li>Docker</li><li>Github Actions</li><li>Monitoring</li><li>Automation</li>
+                        <li>VSCode</li><li>Obsidian</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-professional">
             <div class="section-head">
                 <p class="kicker">Featured Projects</p>
-                <h2>代表作とツール群</h2>
+                <h2>代表作（実務・エンジニアリング）</h2>
             </div>
             <div class="card-grid card-grid-two">
                 <article class="project-card">
@@ -103,7 +139,33 @@
             </div>
         </section>
 
-        <section id="gear" class="content-section reveal">
+        <!-- =============== PERSONAL 層 =============== -->
+
+        <section id="personal" class="content-section reveal layer-personal">
+            <div class="section-head">
+                <p class="kicker">Personal Status</p>
+                <h2>今の状態</h2>
+            </div>
+            <div class="card-grid card-grid-three">
+                <article class="status-card">
+                    <span class="status-label">Availability</span>
+                    <span class="status-value highlight-busy">Busy</span>
+                    <span class="status-sub">Updated automatically every 2h</span>
+                </article>
+                <article class="status-card">
+                    <span class="status-label">Room Temp</span>
+                    <span class="status-value">24.5°C</span>
+                    <span class="status-sub">Live via Raspberry Pi</span>
+                </article>
+                <article class="status-card">
+                    <span class="status-label">Now Playing</span>
+                    <span class="status-value">LONGMAN - Spiral</span>
+                    <span class="status-sub">Spotify API / Practice Track</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-personal">
             <div class="section-head">
                 <p class="kicker">Workspace & Environment</p>
                 <h2>開発環境と機材</h2>
@@ -143,7 +205,7 @@
             </div>
         </section>
 
-        <section id="lifestyle" class="content-section reveal private-zone">
+        <section class="content-section reveal layer-personal private-zone">
             <div class="section-head">
                 <p class="kicker">Hobbies & Interests</p>
                 <h2>ライフスタイル</h2>
@@ -177,7 +239,7 @@
         <p>© 2026 komotiiii</p>
         <div class="social-links">
             <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+        </div>
     </footer>
 </body>
 </html>
