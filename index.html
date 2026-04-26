@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="komotiiiiの開発ポートフォリオ。自動化、データ収集、アルゴリズム実装、暗号資産システム開発の実績を紹介します。">
+    <meta name="description" content="komotiiiiの開発ポートフォリオ。自動化、データ収集、アルゴリズム実装、暗号資産システム開発の実績と、パーソナルな技術環境を紹介します。">
     <title>komotiiii | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,10 @@
     <header class="site-header">
         <a class="brand" href="#top">komotiiii</a>
         <nav class="main-nav" aria-label="Main navigation">
-            <a href="#featured">Featured</a>
-            <a href="#toolboxes">Toolboxes</a>
-            <a href="#private-work">Private</a>
+            <a href="#status">Status</a>
+            <a href="#featured">Projects</a>
+            <a href="#gear">Workspace</a>
+            <a href="#lifestyle">Lifestyle</a>
             <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHub</a>
         </nav>
     </header>
@@ -29,101 +30,144 @@
             <p class="kicker">Physics x Data x Automation</p>
             <h1>解析して、作って、運用まで回す。</h1>
             <p class="hero-lead">
-                筑波大学院で物理を学びながら、PythonとC++で実務レベルの自動化ツールとデータ処理基盤を開発。
-                API連携、スクレイピング、監視、通知、可視化までを一気通貫で実装します。
+                筑波大学院で高エネルギー原子核実験の物理を学びながら、データエンジニアとして実務レベルのデータ処理基盤を開発。API連携、スクレイピング、監視、自動化までを一気通貫で実装します。
             </p>
             <p class="hero-role">Physics Graduate Student @ Tsukuba Univ. / Data Engineer / Crypto Bot Developer</p>
-            <ul class="chip-list" aria-label="Interests">
-                <li>Motorcycle</li>
-                <li>Night Sky Photography</li>
-                <li>Music</li>
-            </ul>
             <div class="cta-row">
                 <a class="btn btn-primary" href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
                 <a class="btn btn-ghost" href="#featured">代表作を見る</a>
             </div>
         </section>
 
+        <section id="status" class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Live Dashboard</p>
+                <h2>Current Status</h2>
+            </div>
+            <div class="card-grid card-grid-three">
+                <article class="status-card">
+                    <span class="status-label">Availability</span>
+                    <span class="status-value highlight-busy">Busy</span>
+                    <span class="status-sub">Updated automatically every 2h</span>
+                </article>
+                <article class="status-card">
+                    <span class="status-label">Room Temp</span>
+                    <span class="status-value">24.5°C</span>
+                    <span class="status-sub">Live via Raspberry Pi</span>
+                </article>
+                <article class="status-card">
+                    <span class="status-label">Now Playing</span>
+                    <span class="status-value">LONGMAN - Spiral</span>
+                    <span class="status-sub">Spotify API / Practice Track</span>
+                </article>
+            </div>
+        </section>
+
         <section id="featured" class="content-section reveal">
             <div class="section-head">
                 <p class="kicker">Featured Projects</p>
-                <h2>代表作</h2>
+                <h2>代表作とツール群</h2>
             </div>
             <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Bybit Trading Panel</h3>
+                    <p class="summary">FastAPI + Reactで構築した複数口座向けトレード管理UI。リアルタイム監視、グリッド注文、段階的リバランスを設計した実務志向の開発。</p>
+                    <ul class="tech-tags">
+                        <li>FastAPI</li><li>React</li><li>Async I/O</li>
+                    </ul>
+                </article>
+
                 <article class="project-card">
                     <h3>Pachi-Slot Analyzer</h3>
                     <p class="summary">Seleniumによる並列スクレイピングでホールデータを収集し、機械ごとの指標をCSV化。分析に直接使えるデータ基盤を構築。</p>
                     <ul class="tech-tags">
-                        <li>Python</li>
-                        <li>Selenium</li>
-                        <li>ThreadPoolExecutor</li>
-                        <li>CSV</li>
+                        <li>Python</li><li>Selenium</li><li>Data Engineering</li>
                     </ul>
-                    <a class="card-link" href="https://github.com/komotiii/pachi-slot-analyzer" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python Automation Scripts</h3>
+                    <p class="summary">カレンダー自動化、天気API連携、PC監視、通知Botなどをリポジトリ単位で整理。日常運用に耐えるスクリプト集。</p>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>Google APIs</li><li>Automation</li>
+                    </ul>
                 </article>
 
                 <article class="project-card">
                     <h3>SAO Calendar UI</h3>
                     <p class="summary">アニメ風のタイマーUIとGoogle Calendar API連携を組み合わせ、予定を視覚的に追えるフロントエンドを実装。</p>
                     <ul class="tech-tags">
-                        <li>JavaScript</li>
-                        <li>Flask</li>
-                        <li>Google Calendar API</li>
-                        <li>UI/UX</li>
+                        <li>JavaScript</li><li>Flask</li><li>UI/UX</li>
                     </ul>
-                    <a class="card-link" href="schedule/index.html">デモを見る</a>
                 </article>
             </div>
         </section>
 
-        <section id="toolboxes" class="content-section reveal">
+        <section id="gear" class="content-section reveal">
             <div class="section-head">
-                <p class="kicker">Developer Toolboxes</p>
-                <h2>自動化と計算力の証明</h2>
+                <p class="kicker">Workspace & Environment</p>
+                <h2>開発環境と機材</h2>
             </div>
             <div class="card-grid card-grid-two">
                 <article class="project-card">
-                    <h3>Python Automation Scripts</h3>
-                    <p class="summary">カレンダー自動化、天気API連携、PC監視、通知Botなどをリポジトリ単位で整理。日常運用に耐えるスクリプト集へ再設計。</p>
+                    <h3>Desktop: DESKTOP-cosumo</h3>
+                    <p class="summary">2018年構築の自作メインマシン。48GBメモリと計3.5TBのストレージで重い解析もカバー。</p>
                     <ul class="tech-tags">
-                        <li>Python</li>
-                        <li>Google APIs</li>
-                        <li>Discord Bot</li>
-                        <li>Automation</li>
+                        <li>Core i5-9400F</li><li>GTX 1060 6GB</li><li>RAM 48GB</li>
                     </ul>
-                    <a class="card-link" href="https://github.com/komotiii/python-automation-scripts" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
                 </article>
-
                 <article class="project-card">
-                    <h3>C++ Math and CLI Utils</h3>
-                    <p class="summary">統計計算、素数探索、時間管理CLIを再整理。ファイル命名とREADMEを改善し、計算系ポートフォリオとして公開可能な形に統合。</p>
+                    <h3>Laptop: LAPTOP-koma</h3>
+                    <p class="summary">デスクトップ環境とターミナル設定をシームレスに同期させたモバイル開発環境。</p>
                     <ul class="tech-tags">
-                        <li>C++</li>
-                        <li>Algorithm</li>
-                        <li>CLI Tools</li>
-                        <li>Numerical Thinking</li>
+                        <li>Ryzen 5 5500U</li><li>RAM 16GB</li><li>Ubuntu / Windows</li>
                     </ul>
-                    <a class="card-link" href="https://github.com/komotiii/cpp-math-utils" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+                <article class="project-card hardware-list">
+                    <h3>Peripherals & Preferences</h3>
+                    <ul>
+                        <li><strong>Keyboard:</strong> FILCO Majestouch 2SS (Cherry MX Silver)</li>
+                        <li><strong>Mouse:</strong> Logicool G PRO Wireless</li>
+                        <li><strong>Desk:</strong> Flexispot EG8 電動昇降デスク</li>
+                        <li><strong>Key Remap:</strong> Caps Lock → Backspace</li>
+                    </ul>
+                </article>
+                <article class="project-card hardware-list">
+                    <h3>Software Stack</h3>
+                    <ul>
+                        <li><strong>Knowledge:</strong> Obsidian (PARA Method)</li>
+                        <li><strong>Editor:</strong> VSCode</li>
+                        <li><strong>Automation:</strong> AutoHotkey</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
-        <section id="private-work" class="content-section reveal private-zone">
+        <section id="lifestyle" class="content-section reveal private-zone">
             <div class="section-head">
-                <p class="kicker">Freelance and Private Works</p>
-                <h2>非公開案件と実務志向の開発</h2>
+                <p class="kicker">Hobbies & Interests</p>
+                <h2>ライフスタイル</h2>
             </div>
-            <div class="card-grid">
+            <div class="card-grid card-grid-two">
                 <article class="project-card">
-                    <h3>Bybit Trading Panel</h3>
-                    <p class="summary">FastAPI + Reactで構築した複数口座向けトレード管理UI。リアルタイム監視、グリッド注文、段階的リバランスを設計。</p>
-                    <ul class="tech-tags">
-                        <li>FastAPI</li>
-                        <li>React</li>
-                        <li>Tailwind CSS</li>
-                        <li>Async I/O</li>
-                    </ul>
-                    <a class="card-link" href="https://github.com/komotiii/Bybit-Trading-Panel" target="_blank" rel="noopener noreferrer">概要を見る</a>
+                    <h3>🏍️ Motorcycle</h3>
+                    <p class="summary"><strong>SUZUKI GSX250R (2017) Blue & White</strong><br>ヨシムラ Slip-On R-77S カーボンエンド (チタンブルーカバー) 装着。現在フェンダーレスから純正戻しを検討中。</p>
+                </article>
+                <article class="project-card">
+                    <h3>🎵 Instruments</h3>
+                    <p class="summary">
+                        <strong>E.Guitar:</strong> Fender MIJ FSR 60s Stratocaster (Custom Shop Pickups)<br>
+                        <strong>Keyboard:</strong> YAMAHA P-225B<br>
+                        大石昌良やゲームBGM（FFX, OMORI）を練習中。
+                    </p>
+                </article>
+                <article class="project-card">
+                    <h3>🎮 Gaming & Entertainment</h3>
+                    <p class="summary">息抜きは VALORANT と League of Legends。Steamでのゲーム開拓も。</p>
+                </article>
+                <article class="project-card">
+                    <h3>🍜 Food & Fitness</h3>
+                    <p class="summary">ラーメン巡りが好き。並行して自炊スキルの向上と、金曜日の脚・腹筋を中心とした筋トレをルーティン化。</p>
                 </article>
             </div>
         </section>
@@ -131,7 +175,9 @@
 
     <footer>
         <p>© 2026 komotiiii</p>
-        <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">github.com/komotiii</a>
+        <div class="social-links">
+            <a href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
     </footer>
 </body>
 </html>

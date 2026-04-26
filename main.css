@@ -242,10 +242,12 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.card-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card,
+.status-card {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px;
     background:
@@ -255,10 +257,55 @@ h3 {
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card:hover {
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card:hover,
+.status-card:hover {
     transform: translateY(-4px);
     border-color: rgba(255, 255, 255, 0.44);
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+
+/* === Dashboard Status Cards === */
+.status-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    padding: 26px 20px;
+}
+
+.status-label {
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.status-value {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.highlight-busy {
+    color: #ff6b6b;
+    text-shadow: 0 0 12px rgba(255, 107, 107, 0.4);
+}
+
+.status-sub {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
 }
 
 .summary {
@@ -281,6 +328,34 @@ h3 {
     color: #e2e2e2;
     padding: 4px 10px;
     font-size: 0.79rem;
+}
+
+/* === Hardware List Styling === */
+.hardware-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hardware-list li {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 8px;
+}
+
+.hardware-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hardware-list strong {
+    color: var(--text-main);
+    font-weight: 500;
+    margin-right: 4px;
 }
 
 .card-link {
@@ -313,6 +388,11 @@ footer {
     font-size: 0.9rem;
 }
 
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
 footer a {
     color: #efefef;
     text-decoration: none;
@@ -343,7 +423,6 @@ footer a:hover {
         opacity: 0;
         transform: translateY(22px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -351,7 +430,8 @@ footer a:hover {
 }
 
 @media (max-width: 980px) {
-    .card-grid-two {
+    .card-grid-two,
+    .card-grid-three {
         grid-template-columns: 1fr;
     }
 }
@@ -380,7 +460,8 @@ footer a:hover {
         border-radius: 16px;
     }
 
-    .project-card {
+    .project-card,
+    .status-card {
         padding: 18px;
     }
 }
@@ -388,6 +469,7 @@ footer a:hover {
 @media (prefers-reduced-motion: reduce) {
     .reveal,
     .project-card,
+    .status-card,
     .btn,
     .main-nav a {
         animation: none;
