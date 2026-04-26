@@ -248,6 +248,10 @@ p {
     color: #fff;
 }
 
+.hub-card:hover h3 {
+    color: #fff;
+}
+
 .hub-card:hover p,
 .hub-card:hover .hub-kicker {
     color: #e9e9e9;
