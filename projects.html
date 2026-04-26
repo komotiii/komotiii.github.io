@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="代表プロジェクトと技術スタックの詳細ページ。">
+    <title>Projects | komotiiii HQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">komotiiii</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="lifestyle.html">Lifestyle</a>
+            <a href="gear.html">Gear</a>
+            <a href="now.html">Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">Projects</p>
+                <h2>代表プロジェクト</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Bybit Trading Panel</h3>
+                    <p class="summary">FastAPI + Reactで構築した複数口座向けトレード管理UI。リアルタイム監視、グリッド注文、段階的リバランスを設計。</p>
+                    <ul class="tech-tags"><li>FastAPI</li><li>React</li><li>Async I/O</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/Bybit-Trading-Panel" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+                <article class="project-card">
+                    <h3>Pachi-Slot Analyzer</h3>
+                    <p class="summary">Seleniumによる並列スクレイピングでホールデータを収集し、機械ごとの指標をCSV化。分析向けデータ基盤を構築。</p>
+                    <ul class="tech-tags"><li>Python</li><li>Selenium</li><li>Data Engineering</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/pachi-slot-analyzer" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+                <article class="project-card">
+                    <h3>Python Automation Scripts</h3>
+                    <p class="summary">カレンダー自動化、天気API連携、PC監視、通知Botなどをリポジトリ単位で整理。日常運用に耐えるスクリプト集。</p>
+                    <ul class="tech-tags"><li>Python</li><li>Google APIs</li><li>Automation</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/python-automation-scripts" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                </article>
+                <article class="project-card">
+                    <h3>SAO Calendar UI</h3>
+                    <p class="summary">アニメ風のタイマーUIとGoogle Calendar API連携を組み合わせ、予定を視覚的に追えるフロントエンドを実装。</p>
+                    <ul class="tech-tags"><li>JavaScript</li><li>Flask</li><li>UI/UX</li></ul>
+                    <a class="card-link" href="schedule/index.html" target="_blank" rel="noopener noreferrer">デモを見る</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">Technical Skills</p>
+                <h2>スキル・技術スタック</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card"><h3>Language and Framework</h3><ul class="tech-tags"><li>Python</li><li>FastAPI</li><li>React</li><li>JavaScript</li><li>SQL</li><li>C++</li><li>Bash</li></ul></article>
+                <article class="skill-card"><h3>Data and Infrastructure</h3><ul class="tech-tags"><li>Pandas</li><li>NumPy</li><li>Selenium</li><li>API Design</li><li>ETL</li><li>Monitoring</li><li>Git</li></ul></article>
+                <article class="skill-card"><h3>Scientific Tools</h3><ul class="tech-tags"><li>ROOT</li><li>HEP Analysis</li><li>GEANT4</li><li>Jupyter</li><li>Linux</li><li>LaTeX</li></ul></article>
+                <article class="skill-card"><h3>Development Ops</h3><ul class="tech-tags"><li>Docker</li><li>GitHub Actions</li><li>Automation</li><li>VSCode</li><li>Obsidian</li><li>AutoHotkey</li></ul></article>
+            </div>
+        </section>
+
+        <section class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Case Note Template</p>
+                <h2>ケース詳細テンプレート</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Problem</h3>
+                    <p>ここに課題背景を追記。例: "手動運用で時間コストが高い"</p>
+                </article>
+                <article class="project-card">
+                    <h3>Approach</h3>
+                    <p>ここに解決方針を追記。例: "データ収集を自動化し、毎日定時実行"</p>
+                </article>
+                <article class="project-card">
+                    <h3>Impact</h3>
+                    <p>ここに成果を追記。例: "作業時間をxx%削減"</p>
+                </article>
+                <article class="project-card">
+                    <h3>Next</h3>
+                    <p>ここに改善予定を追記。例: "監視の可視化ダッシュボードを追加"</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 komotiiii</p>
+        <div class="social-links"><a href="index.html">Home</a><a href="now.html">Now</a><a href="contact.html">Contact</a></div>
+    </footer>
+</body>
+</html>
