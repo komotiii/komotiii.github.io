@@ -655,3 +655,22 @@ footer {
     color: var(--ink-soft);
     transform: translateX(10px);
 }
+
+.project-card, .skill-card, .status-card, .timeline-item {
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover, .skill-card:hover, .status-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--theme-green-soft);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+::selection {
+    background: var(--theme-green);
+    color: var(--paper);
+}
+::-moz-selection {
+    background: var(--theme-green);
+    color: var(--paper);
+}
