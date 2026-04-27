@@ -16,8 +16,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="hero-role">Physics Graduate Student / Data Engineer / Builder</p>
             <div class="cta-row">
                 <a class="btn btn-primary" href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">View GitHub</a>
-                <a class="btn btn-ghost" href="projects.html">View Projects</a>
-                <a class="btn btn-ghost" href="now.html">View Current Status</a>
+                <a class="btn btn-ghost" href="/projects">View Projects</a>
+                <a class="btn btn-ghost" href="/now">View Current Status</a>
             </div>
         </section>
 
@@ -61,8 +61,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 </article>
             </div>
 
-            <div style="margin-top: 28px; display: flex; justify-content: flex-end;">
-                <a class="btn btn-ghost" href="projects.html">View All Projects <span>→</span></a>
+            <div class="section-actions section-actions-right">
+                <a class="btn btn-ghost" href="/projects">View All Projects <span>→</span></a>
             </div>
         </section>
 
@@ -83,9 +83,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     <ul class="tech-tags"><li>Win 11</li><li>Cherry MX Speed</li></ul>
                 </article>
             </div>
-            <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end;">
-                <a class="btn btn-ghost" href="lifestyle.html">View Lifestyle <span>→</span></a>
-                <a class="btn btn-ghost" href="gear.html">View Gear <span>→</span></a>
+            <div class="section-actions section-actions-wrap section-actions-right">
+                <a class="btn btn-ghost" href="/lifestyle">View Lifestyle <span>→</span></a>
+                <a class="btn btn-ghost" href="/gear">View Gear <span>→</span></a>
             </div>
         </section>
 
@@ -97,7 +97,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="stats-grid">
                 <article class="metric">
                     <span class="metric-label">Availability</span>
-                    <span class="metric-value highlight-busy" style="width: fit-content;">Busy</span>
+                    <span class="metric-value highlight-busy fit-content">Busy</span>
                 </article>
                 <article class="metric">
                     <span class="metric-label">Room Temp</span>
@@ -105,11 +105,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 </article>
                 <article class="metric">
                     <span class="metric-label">Now Playing</span>
-                    <span class="metric-value" style="font-size: 1.1rem; padding-top: 5px;">LONGMAN - Spiral</span>
+                    <span class="metric-value metric-value-compact">LONGMAN - Spiral</span>
                 </article>
             </div>
-            <div style="margin-top: 28px; display: flex; justify-content: flex-end;">
-                <a class="btn btn-ghost" href="now.html">View Full Status <span>→</span></a>
+            <div class="section-actions section-actions-right">
+                <a class="btn btn-ghost" href="/now">View Full Status <span>→</span></a>
             </div>
         </section>
 
