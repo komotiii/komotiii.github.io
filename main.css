@@ -41,9 +41,20 @@ footer {
 }
 
 .site-header {
+    /* ▼ スクロール追従とすりガラス効果 ▼ */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(248, 248, 246, 0.85); /* 背景を少しだけ透かす */
+    backdrop-filter: blur(10px); /* すりガラス効果 */
+    -webkit-backdrop-filter: blur(10px); /* Safari対応 */
+
+    /* ▼ 既存のレイアウト設定 ▼ */
     margin-bottom: 22px;
-    padding: 12px 0;
+    padding: 12px 20px; /* スクロール時に自然に見えるよう左右に少し余白を追加 */
     border-bottom: 3px double var(--line);
+    border-radius: 0 0 8px 8px; /* 下の角を少し丸くすると画面に馴染みます */
+
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
@@ -529,4 +540,106 @@ footer {
         animation: none;
         transition: none;
     }
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-link {
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+/* 3本線ボタンのデザイン */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 4px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--ink);
+    transition: 0.2s;
+}
+
+/* メニュー画面（オーバーレイ） */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 背景を暗くする */
+    backdrop-filter: blur(4px); /* 背景をぼかす（ハッカーっぽい） */
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.menu-overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* メニューの引き出し（ドロワー） */
+.menu-drawer {
+    position: absolute;
+    top: 0;
+    right: -320px; /* 最初は画面外に隠す */
+    width: 320px;
+    height: 100%;
+    background: var(--paper);
+    padding: 40px 28px;
+    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+}
+
+.menu-overlay.is-active .menu-drawer {
+    right: 0; /* 画面内に出現 */
+}
+
+.menu-close {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-family: serif;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.drawer-nav a {
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ink);
+    border: none; /* indexのスタイルをリセット */
+    padding: 0;
+}
+
+.drawer-nav a:hover {
+    color: var(--ink-soft);
+    transform: translateX(10px);
 }
