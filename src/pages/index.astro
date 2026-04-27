@@ -1,0 +1,117 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="komotiii | Home" description="komotiii home page with projects, lifestyle logs, gear setup, and current status.">
+
+    <main id="top">
+        <section class="hero reveal">
+            <p class="kicker">Home</p>
+            <h1>komotiii</h1>
+            <p class="hero-lead">
+                I write code and ride roads.
+                This is where I collect both my engineering work and daily logs.
+            </p>
+            <p class="hero-role">Physics Graduate Student / Data Engineer / Builder</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="https://github.com/komotiii" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                <a class="btn btn-ghost" href="projects.html">View Projects</a>
+                <a class="btn btn-ghost" href="now.html">View Current Status</a>
+            </div>
+        </section>
+
+        <section class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Snapshot</p>
+                <h2>Overview</h2>
+            </div>
+            <div class="stats-grid">
+                <article class="metric">
+                    <span class="metric-label">Primary Mode</span>
+                    <span class="metric-value">Build + Ops</span>
+                </article>
+                <article class="metric">
+                    <span class="metric-label">Current Base</span>
+                    <span class="metric-value">Tsukuba</span>
+                </article>
+                <article class="metric">
+                    <span class="metric-label">Coverage</span>
+                    <span class="metric-value">Tech + Life</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Highlight</p>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Pachi-Slot Analyzer</h3>
+                    <p class="summary">Parallel Selenium scraping pipeline that collects hall data and exports machine-level metrics to CSV for analysis-ready workflows.</p>
+                    <ul class="tech-tags"><li>Python</li><li>Selenium</li><li>Data Engineering</li></ul>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python Automation Scripts</h3>
+                    <p class="summary">Repository-scale automation pack covering calendar tasks, weather API integration, desktop monitoring, and notification bots.</p>
+                    <ul class="tech-tags"><li>Python</li><li>Google APIs</li><li>Automation</li></ul>
+                </article>
+            </div>
+
+            <div style="margin-top: 28px; display: flex; justify-content: flex-end;">
+                <a class="btn btn-ghost" href="projects.html">View All Projects <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Identity</p>
+                <h2>Lifestyle & Gear</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Motorcycle & Hobbies</h3>
+                    <p class="summary">Riding my GSX250R across Ibaraki, playing instruments (Guitar/Keyboard), and exploring new ramen shops.</p>
+                    <ul class="tech-tags"><li>GSX250R</li><li>Music</li><li>Gaming</li></ul>
+                </article>
+                <article class="project-card">
+                    <h3>Workspace Setup</h3>
+                    <p class="summary">Dual-machine architecture (Desktop for heavy ops, Laptop for mobility) synchronized with Obsidian and custom AHK scripts.</p>
+                    <ul class="tech-tags"><li>Win 11</li><li>Cherry MX Speed</li></ul>
+                </article>
+            </div>
+            <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end;">
+                <a class="btn btn-ghost" href="lifestyle.html">View Lifestyle <span>→</span></a>
+                <a class="btn btn-ghost" href="gear.html">View Gear <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="content-section reveal">
+            <div class="section-head">
+                <p class="kicker">Live</p>
+                <h2>Current Status</h2>
+            </div>
+            <div class="stats-grid">
+                <article class="metric">
+                    <span class="metric-label">Availability</span>
+                    <span class="metric-value highlight-busy" style="width: fit-content;">Busy</span>
+                </article>
+                <article class="metric">
+                    <span class="metric-label">Room Temp</span>
+                    <span class="metric-value">24.5°C</span>
+                </article>
+                <article class="metric">
+                    <span class="metric-label">Now Playing</span>
+                    <span class="metric-value" style="font-size: 1.1rem; padding-top: 5px;">LONGMAN - Spiral</span>
+                </article>
+            </div>
+            <div style="margin-top: 28px; display: flex; justify-content: flex-end;">
+                <a class="btn btn-ghost" href="now.html">View Full Status <span>→</span></a>
+            </div>
+        </section>
+
+    </main>
+</BaseLayout>

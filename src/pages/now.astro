@@ -1,0 +1,22 @@
+---
+// src/pages/projects.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Projects | komotiii HQ" description="Detailed page for all projects, tools, and technical stack.">
+    <main>
+        <section class="content-section reveal layer-personal">
+            <div class="section-head"><p class="kicker">Now</p><h2>Current Status</h2></div>
+            <div class="card-grid card-grid-three">
+                <article class="status-card"><span class="status-label">Availability</span><span class="status-value highlight-busy">Busy</span><span class="status-sub">Updated every 2 hours</span></article>
+                <article class="status-card"><span class="status-label">Room Temp</span><span class="status-value">24.5°C</span><span class="status-sub">Continuously measured via Raspberry Pi</span></article>
+                <article class="status-card"><span class="status-label">Now Playing</span><span class="status-value">LONGMAN - Spiral</span><span class="status-sub">Recently played track</span></article>
+            </div>
+            <div class="status-links">
+                <a class="card-link" href="schedule/index.html" target="_blank" rel="noopener noreferrer">View Schedule (Busy View)</a>
+                <a class="card-link" href="https://github.com/komotiii/TEST/tree/main/raspi-home-iot" target="_blank" rel="noopener noreferrer">View Raspberry Pi Temp/Humidity Log</a>
+            </div>
+        </section>
+    </main>
+    </BaseLayout>
+
