@@ -4,8 +4,10 @@
     --panel-alt: #27272a;
     --ink: #f4f4f5;
     --ink-soft: #a1a1aa;
-    --line: #3f3f46;
-    --line-soft: #27272a;
+
+    --line: #52525b;
+    --line-soft: #3f3f46;
+
     --shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
     --theme-green: #10b981;
@@ -52,6 +54,9 @@ footer {
     -webkit-backdrop-filter: blur(10px);
     margin-bottom: 22px;
     padding: 12px 20px;
+
+    border-top: 2px solid #ef4444;
+
     border-bottom: 3px double var(--line);
     border-radius: 0 0 8px 8px;
     display: flex;
