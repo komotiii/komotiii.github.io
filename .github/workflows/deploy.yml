@@ -1,11 +1,12 @@
 name: Deploy to GitHub Pages
 
 on:
-  # mainブランチにPushされたときだけ自動で動く設定
   push:
     branches: [ main ]
-  # GitHubの画面から手動で実行できるようにする設定
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -24,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        with:
+          node-version: 22
 
   deploy:
     needs: build
