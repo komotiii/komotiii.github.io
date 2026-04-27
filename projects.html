@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detailed page for featured projects and technical stack.">
+    <meta name="description" content="Detailed page for all projects, tools, and technical stack.">
     <title>Projects | komotiii HQ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,79 +29,123 @@
     <main>
         <section class="content-section reveal layer-professional">
             <div class="section-head">
-                <p class="kicker">Projects</p>
-                <h2>Featured Projects</h2>
+                <p class="kicker">01 / Data Engineering</p>
+                <h2>Data Collection & Analysis</h2>
             </div>
             <div class="card-grid card-grid-two">
                 <article class="project-card">
-                    <h3>Bybit Trading Panel</h3>
-                    <p class="summary">A multi-account trading management UI built with FastAPI and React. Designed for real-time monitoring, grid orders, and progressive rebalancing.</p>
-                    <ul class="tech-tags"><li>FastAPI</li><li>React</li><li>Async I/O</li></ul>
-                    <a class="card-link" href="https://github.com/komotiii/Bybit-Trading-Panel" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </article>
-                <article class="project-card">
                     <h3>Pachi-Slot Analyzer</h3>
-                    <p class="summary">Parallel Selenium scraping pipeline that collects hall data and exports machine-level metrics to CSV for analysis-ready workflows.</p>
-                    <ul class="tech-tags"><li>Python</li><li>Selenium</li><li>Data Engineering</li></ul>
+                    <p class="summary">High-speed, parallel Selenium scraper that automatically discovers hierarchical machine URLs. Features robust retry mechanisms and structured CSV exports for immediate data analysis.</p>
+                    <ul class="tech-tags"><li>Python</li><li>Selenium</li><li>Parallel Processing</li></ul>
                     <a class="card-link" href="https://github.com/komotiii/pachi-slot-analyzer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </article>
                 <article class="project-card">
-                    <h3>Python Automation Scripts</h3>
-                    <p class="summary">Repository-scale automation pack covering calendar tasks, weather API integration, desktop monitoring, and notification bots for daily operations.</p>
-                    <ul class="tech-tags"><li>Python</li><li>Google APIs</li><li>Automation</li></ul>
-                    <a class="card-link" href="https://github.com/komotiii/python-automation-scripts" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </article>
-                <article class="project-card">
-                    <h3>SAO Calendar UI</h3>
-                    <p class="summary">Anime-inspired timer interface integrated with Google Calendar API for visual event tracking and scheduling focus.</p>
-                    <ul class="tech-tags"><li>JavaScript</li><li>Flask</li><li>UI/UX</li></ul>
-                    <a class="card-link" href="schedule/index.html" target="_blank" rel="noopener noreferrer">View Demo</a>
+                    <h3>NAR Keiba Monitor</h3>
+                    <p class="summary">Real-time web scraper for local horse racing odds. Continuously monitors metrics, highlights profitable win-rate/odds combinations, and triggers local audio alerts before deadlines.</p>
+                    <ul class="tech-tags"><li>Python</li><li>Real-time Data</li><li>Scraping</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/nar-keiba-monitor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </article>
             </div>
         </section>
 
         <section class="content-section reveal layer-professional">
             <div class="section-head">
-                <p class="kicker">Technical Skills</p>
+                <p class="kicker">02 / FinTech</p>
+                <h2>Trading Systems & Crypto</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Bybit Trading Tools</h3>
+                    <p class="summary">Suite of algorithmic trading scripts. Automates USDC/USDT arbitrage, BUSD cyclical price divergence capturing, and P2P transaction profit calculations via Bybit APIs.</p>
+                    <ul class="tech-tags"><li>Python</li><li>Algorithmic Trading</li><li>API</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/Bybit-Trading-Tools" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+
+                <article class="project-card private-zone">
+                    <h3>Bybit Trading Panel</h3>
+                    <p class="summary">[Private Repository] Professional-grade dual-account hedging system for perpetual futures. Features a FastAPI backend, React UI, and an event-driven WebSocket monitor with a 6-stage dynamic grid strategy.</p>
+                    <ul class="tech-tags"><li>FastAPI</li><li>React</li><li>WebSockets</li></ul>
+                    <span class="card-link" style="border: none; color: var(--text-soft); cursor: default;">Code is Private</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">03 / Utility</p>
+                <h2>Automation & OS Config</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Python Automation Scripts</h3>
+                    <p class="summary">Comprehensive suite automating daily workflows. Integrates Google Calendar and OpenWeather APIs, performs extensive desktop usage monitoring, and powers custom Discord notification bots.</p>
+                    <ul class="tech-tags"><li>Python</li><li>API Integration</li><li>Workflow Ops</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/python-automation-scripts" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <h3>Windows Workspace Config</h3>
+                    <p class="summary">Advanced AutoHotkey automation for OS-level efficiency. Orchestrates complex multi-window startup sequences, custom keybinds, and dynamic layout configurations.</p>
+                    <ul class="tech-tags"><li>AutoHotkey</li><li>OS Automation</li><li>Productivity</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/windows-workspace-config" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <h3>SAO Calendar UI</h3>
+                    <p class="summary">Immersive, Sword Art Online-themed schedule dashboard. Combines a Python API backend for Google Calendar data with a custom JS/CSS frontend featuring real-time countdowns and audio cues.</p>
+                    <ul class="tech-tags"><li>Full-Stack</li><li>UI/UX</li><li>Google APIs</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/sao-calendar-ui" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">04 / Hardware & Core</p>
+                <h2>AI, IoT & Algorithms</h2>
+            </div>
+            <div class="card-grid card-grid-two">
+                <article class="project-card">
+                    <h3>Posture Monitor (MediaPipe)</h3>
+                    <p class="summary">Real-time computer vision application using OpenCV and MediaPipe. Tracks facial and shoulder landmarks to detect slouching, triggering audible alerts to correct user posture.</p>
+                    <ul class="tech-tags"><li>Computer Vision</li><li>MediaPipe</li><li>OpenCV</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/posture-monitor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <h3>Raspi Env Monitor</h3>
+                    <p class="summary">Raspberry Pi-based smart home integration. Analyzes infrared signals for AC control and correlates room temperature/humidity data, serving insights via a local Flask dashboard.</p>
+                    <ul class="tech-tags"><li>Raspberry Pi</li><li>IoT</li><li>Signal Analysis</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/raspi-home-iot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <h3>C++ Math Utils</h3>
+                    <p class="summary">High-performance command-line toolset. Includes statistical dataset analyzers, robust countdown/progress trackers, and multiple prime number generation algorithms optimized up to trial division by square root.</p>
+                    <ul class="tech-tags"><li>C++</li><li>Algorithms</li><li>CLI</li></ul>
+                    <a class="card-link" href="https://github.com/komotiii/cpp-math-utils" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal layer-professional">
+            <div class="section-head">
+                <p class="kicker">Capabilities</p>
                 <h2>Skills and Stack</h2>
             </div>
             <div class="skills-grid">
-                <article class="skill-card"><h3>Language and Framework</h3><ul class="tech-tags"><li>Python</li><li>FastAPI</li><li>React</li><li>JavaScript</li><li>SQL</li><li>C++</li><li>Bash</li></ul></article>
-                <article class="skill-card"><h3>Data and Infrastructure</h3><ul class="tech-tags"><li>Pandas</li><li>NumPy</li><li>Selenium</li><li>API Design</li><li>ETL</li><li>Monitoring</li><li>Git</li></ul></article>
-                <article class="skill-card"><h3>Scientific Tools</h3><ul class="tech-tags"><li>ROOT</li><li>HEP Analysis</li><li>GEANT4</li><li>Jupyter</li><li>Linux</li><li>LaTeX</li></ul></article>
+                <article class="skill-card"><h3>Language & Framework</h3><ul class="tech-tags"><li>Python</li><li>FastAPI</li><li>React</li><li>JavaScript</li><li>SQL</li><li>C++</li><li>Bash</li></ul></article>
+                <article class="skill-card"><h3>Data & Infrastructure</h3><ul class="tech-tags"><li>Pandas</li><li>NumPy</li><li>Selenium</li><li>API Design</li><li>ETL</li><li>Monitoring</li><li>Git</li></ul></article>
+                <article class="skill-card"><h3>Scientific Tools</h3><ul class="tech-tags"><li>ROOT</li><li>HEP Analysis</li><li>Mathematica</li><li>Jupyter</li><li>Linux</li><li>LaTeX</li></ul></article>
                 <article class="skill-card"><h3>Development Ops</h3><ul class="tech-tags"><li>Docker</li><li>GitHub Actions</li><li>Automation</li><li>VSCode</li><li>Obsidian</li><li>AutoHotkey</li></ul></article>
             </div>
         </section>
 
-        <section class="content-section reveal">
-            <div class="section-head">
-                <p class="kicker">Case Note Template</p>
-                <h2>Case Detail Template</h2>
-            </div>
-            <div class="card-grid card-grid-two">
-                <article class="project-card">
-                    <h3>Problem</h3>
-                    <p>Write the background problem here. Example: "Manual operations consumed too much time."</p>
-                </article>
-                <article class="project-card">
-                    <h3>Approach</h3>
-                    <p>Write the solution approach here. Example: "Automated data collection with scheduled daily runs."</p>
-                </article>
-                <article class="project-card">
-                    <h3>Impact</h3>
-                    <p>Write measurable outcomes here. Example: "Reduced working time by xx%."</p>
-                </article>
-                <article class="project-card">
-                    <h3>Next</h3>
-                    <p>Write next improvements here. Example: "Add a monitoring dashboard for visibility."</p>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer>
         <p>© 2026 komotiii</p>
-        <div class="social-links"><a href="index.html">Home</a><a href="now.html">Now</a><a href="contact.html">Contact</a></div>
+        <div class="social-links">
+            <a href="index.html">Home</a>
+            <a href="now.html">Now</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </footer>
 </body>
 </html>
