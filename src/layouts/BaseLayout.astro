@@ -4,9 +4,9 @@ import Header from '../components/Header.astro';
 
 // 各ページから受け取る変数（タイトルと説明文）
 const { title, description } = Astro.props;
-const siteName = 'komotiii HQ';
+const siteName = 'Kazuki Komaba';
 const resolvedTitle = title ?? `${siteName} | Home`;
-const resolvedDescription = description ?? 'Engineering portfolio, current status, and personal logs by komotiii.';
+const resolvedDescription = description ?? 'Engineering portfolio, current status, and personal logs by Kazuki Komaba.';
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
 const currentYear = new Date().getFullYear();
 ---
@@ -44,7 +44,7 @@ const currentYear = new Date().getFullYear();
     <slot />
 
     <footer>
-        <p>© {currentYear} komotiii</p>
+        <p>© {currentYear} Kazuki Komaba</p>
     </footer>
 </body>
 </html>
